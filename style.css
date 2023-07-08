@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+p {
+  color: #757575;
+}
+
+.btn {
+  background-color: rgb(250, 133, 38);
+  color: white;
+  padding: 17px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 16px;
+  border: none;
+}
+.flex,
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+/* header */
+header,
+footer {
+  background-color: #fff8f3;
+}
+.logo h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.orange {
+  color: rgb(250, 133, 38);
+}
+.navbar {
+  padding: 20px 0;
+}
+.navbar,
+.navs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navs ul li {
+  margin-right: 20px;
+}
+.btns .btn {
+  margin: 20px 0;
+  margin-right: 20px;
+}
+.banner {
+  justify-content: space-between;
+  background-image: url("/images/Group\ 12.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.banner-content p,
+h2 {
+  color: #757575;
+  width: 70%;
+}
+.banner-content h1 {
+  font-size: 50px;
+}
+.banner-photo img {
+  width: 500px;
+  height: 600px;
+}
+
+/* about */
+main section {
+  margin-top: 100px;
+}
+.about-content {
+  background-color: #fff8f3;
+  padding: 100px 130px;
+}
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.description {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #757575;
+}
+
+.infos {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+/* what i do section */
+.cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.card {
+  background-color: #fff8f3;
+  padding: 20px;
+  box-shadow: 4px 4px 10px gainsboro;
+  color: #757575;
+}
+.card img,
+h3,
+p {
+  margin-top: 10px;
+}
+
+/* resume */
+.resumes {
+  margin-top: 80px;
+  gap: 8px;
+}
+.resumes h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.item p,
+hr {
+  width: 70%;
+}
+.item p,
+hr {
+  margin-top: 15px;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+}
+.footer-content {
+  padding: 100px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content h1 {
+  font-size: 30px;
+}
+.footer-content p {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.icons img {
+  margin-right: 20px;
+}
+
+.message input[type="text"],
+.message input[type="email"],
+textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+/* responsive */
+/* mobile */
+@media screen and (max-width: 572px) {
+  /* header */
+  .container {
+    width: 90%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-content p,
+  h2 {
+    width: 50%;
+  }
+  .banner-content h1 {
+    font-size: 40px;
+  }
+  .banner-photo img {
+    width: 300px;
+    height: 400px;
+  }
+
+  /* about */
+
+  .about-content {
+    padding: 100px 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .infos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* what i do section */
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* resume */
+  .resumes {
+    flex-direction: column;
+    gap: 15px;
+  }
+  /* footer */
+  .footer-content {
+    padding: 80px 0;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 573px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  .banner-content p,
+  h2 {
+    width: 70%;
+  }
+  .banner-content h1 {
+    font-size: 40px;
+  }
+  .banner-photo img {
+    width: 200px;
+    height: 300px;
+  }
+  /* about */
+
+  .about-content {
+    padding: 100px 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .infos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* what i do section */
+  .cards {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    padding: 10px;
+  }
+  /* resume
+  .resumes {
+    margin-top: 80px;
+    gap: 8px;
+  }
+  .resumes h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .item p,
+  hr {
+    width: 70%;
+  } */
+}
